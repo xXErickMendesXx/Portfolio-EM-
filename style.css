@@ -1,3 +1,23 @@
+*{
+	box-sizing: border-box;
+}
+
+/* general */
+.container{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+/* header */
 #masthead{
 	position: fixed;
 	width: 100%;
@@ -8,16 +28,10 @@
 	border-bottom: 2px solid grey;
 }
 
-.container{
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	clear: both;
-}
-
 nav{
 	float: right;
 	margin-top: 25px;
+	color: blue;
 }
 
 nav a{
@@ -27,17 +41,18 @@ nav a{
 	line-height: 18px;
 	color: rgb(0, 0, 0);
 	text-decoration: none;
-	border-left: 1px solid rgb(255, 255, 255);
+	border-left: 1px solid rgb(77, 191, 219);
 	
 }
 
 nav:first-child{
 	border-left: 0 none;
 }
-
+/* main */
 #main-container {
 	padding-top: 130px;
 }
+
 .main-section {
 	float: left;
 	width: 100%;
@@ -55,7 +70,10 @@ nav:first-child{
 	height: auto;
 	margin-top: 10px;
 	margin-right: 25px;
+
 }
+
+/* sidebar */
 .sidebar{
 	float: right;
 	width: 100%;
@@ -65,6 +83,7 @@ nav:first-child{
 	background: rgb(238, 255, 0);
 	border: 1px solid yellow;
 }
+
 h3, .sidebar h2 {
 	padding-bottom: 20px;
 	margin-bottom: 15px;
@@ -77,4 +96,55 @@ h3, .sidebar h2 {
 	height: 62px;
 	margin-top: 8px;
 	margin-right: 5px;
+}
+/* portfolio page*/
+
+.work {
+	position: relative;
+	float: left;
+	width: 274px;
+	margin: 20px 0 25px;
+	overflow: auto;
+}
+.work:nth-child(even) {
+	margin-right: 40px;
+}
+.work img{
+	width 100%;
+	border: 0 none;
+	opacity: 0.0;}
+
+.work h3{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 0;
+	font-weight: 300;
+	color: purple;
+	text-align: center;
+	background: aqua;
+	border-bottom: 0;
+
+	}
+
+
+
+/* footer */
+footer {
+	padding: 30px 0;
+	clear: both;
+	font-size: 12px;
+	text-align: center;
+	color: yellow;
+	background: black;
+	border-top: 8px solid red;
+}
+
+.work {
+	position: relative;
+	float: left;
+	width: 274px;
+	margin: 20px 0 25px;
+	overflow: auto;
 }
